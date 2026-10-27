@@ -8,7 +8,7 @@ Build KVM Migration Assistant for existing libvirt hosts. User requested deeper 
 
 Branch: `feat/migration-preflight`. CLI MVP implemented with offline XML and live read-only virsh collection. Text/JSON output. No mutation or migration execution. No ready/success verdict; unsupported advertised architecture/machine or non-running VM yields a blocker; unresolved checks require review.
 
-Initial test run failed before implementation; 15 tests then passed on Python 3.14.6. Test data is synthetic. Source commands are tested via mocks; no libvirt client or KVM hosts available locally. The first zipapp smoke test caught an exit-code bug in the generated entry point; fixed with an explicit SystemExit wrapper and a regression test. All 16 tests now pass; zipapp help, offline assessment and missing-virsh handling were checked. No external deployment or real migration has been performed. No GitHub remote was provided at implementation time; user is creating one.
+Initial test run failed before implementation; 15 tests then passed on Python 3.14.6. Test data is synthetic. Source commands are tested via mocks; no libvirt client or KVM hosts available locally. The first zipapp smoke test caught an exit-code bug in the generated entry point; fixed with an explicit SystemExit wrapper and a regression test. All 16 tests now pass; zipapp help, offline assessment and missing-virsh handling were checked. No external deployment or real migration has been performed. GitHub origin is now https://github.com/xsub/KVMMA.git. Its initial commit and user-supplied BSD 3-Clause license were merged without rewriting either history. Publication targets main; feat/migration-preflight is retained locally.
 
 ## Implementation map
 
@@ -21,7 +21,7 @@ Initial test run failed before implementation; 15 tests then passed on Python 3.
 
 ## Continue
 
-Read current Git status and file contents before editing: other workers may modify the checkout. Use a distinct branch/worktree for concurrent work; do not reset someone else's changes. Connect only the GitHub repository supplied by the user. Request test host URIs and VM identity to perform real-host validation. Use README acceptance procedure and record observations. Do not advertise deployment or readiness based on fixture tests. TODO.md distinguishes essential validation from optional features.
+Read current Git status and file contents before editing: other workers may modify the checkout. Use a distinct branch/worktree for concurrent work; do not reset someone else's changes. Use the configured origin xsub/KVMMA; inspect remote state before publishing. Request test host URIs and VM identity to perform real-host validation. Use README acceptance procedure and record observations. Do not advertise deployment or readiness based on fixture tests. TODO.md distinguishes essential validation from optional features.
 
 ## Known limitations
 
@@ -30,3 +30,7 @@ Capabilities XML only proves advertised support. CPU compatibility is not establ
 ## Skill validation
 
 The reusable skill was reviewed manually for frontmatter, scope and references. The bundled quick_validate.py could not run because PyYAML is absent from both available Python runtimes. No extra dependency was installed. The skill is stored in this repository and is not installed globally.
+
+## Publication preparation
+
+Merged the GitHub initialization, updated license documentation and included LICENSE in the zipapp. The final local checkout will track origin/main. Confirm git status and remote HEAD when resuming; actual remote publication is verified separately from this document.

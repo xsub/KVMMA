@@ -19,4 +19,4 @@
 - [ ] Batch evacuation and scheduling.
 - [ ] Remote CI matrix for supported Python versions after GitHub is connected.
 - [ ] Packaging smoke test for pip installation.
-- [ ] Choose a project license before public distribution; no license choice inferred.
+- [x] Project license: BSD 3-Clause, supplied in the GitHub initialization.

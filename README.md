@@ -65,3 +65,7 @@ Reviewed 2026-10-27:
 Existing tools include virsh for orchestration, virt-manager for graphical administration and Proxmox for integrated clusters. KVMMA's narrow scope is an explainable preflight report for existing libvirt hosts. This initial workspace contained no prior code to integrate.
 
 See [TODO.md](TODO.md) for deferred features and [HANDOFF.md](HANDOFF.md) for current evidence and next steps. A reusable validation skill is stored in `skills/kvm-migration-validation/SKILL.md`.
+
+## Repository and license
+
+Canonical repository: https://github.com/xsub/KVMMA. Licensed under the [BSD 3-Clause License](LICENSE).
