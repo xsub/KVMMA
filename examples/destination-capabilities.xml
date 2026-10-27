@@ -1,0 +1,3 @@
+<capabilities><host><cpu><arch>x86_64</arch></cpu></host>
+<guest><os_type>hvm</os_type><arch name="x86_64"><domain type="kvm">
+<machine canonical="pc-q35-9.0">q35</machine></domain></arch></guest></capabilities>

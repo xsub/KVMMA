@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kvm-migration-assistant"
+version = "0.1.0"
+description = "Read-only migration preflight inspection for libvirt KVM guests"
+requires-python = ">=3.10"
+
+[project.scripts]
+kvmma = "kvm_preflight.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["kvm_preflight*"]

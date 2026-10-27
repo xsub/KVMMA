@@ -1,0 +1,5 @@
+<domain type="kvm"><name>demo</name><memory unit="MiB">1024</memory>
+<os><type arch="x86_64" machine="pc-q35-9.0">hvm</type></os>
+<cpu mode="host-passthrough"/><devices><disk type="file" device="disk">
+<source file="/vm/demo.qcow2"/></disk><interface type="bridge">
+<source bridge="br0"/></interface></devices></domain>
